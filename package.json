@@ -1,0 +1,21 @@
+{
+  "name": "react-hooks-presentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gustavofsantos/react-hooks-presentation.git",
+  "author": "Gustavo Santos <gustavo@send4.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "parcel-bundler": "^1.12.3"
+  }
+}
