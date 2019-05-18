@@ -6,13 +6,15 @@
   "author": "Gustavo Santos <gustavo@send4.com.br>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html -d dev",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "eslint-config-airbnb": "^17.1.0",
