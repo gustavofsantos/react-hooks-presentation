@@ -6,21 +6,12 @@ import useTodos from "./13";
  * Exemplo: Lista de afazeres
  */
 export default function TodoList() {
-  // ☝ useState insere uma lógica de gerencia de estado
-  // de forma independente
   const [todo, setTodo] = useState("");
   const { todos, addTodo, removeTodo } = useTodos();
 
   const handleChangeTodo = useCallback(ev => {
     setTodo(ev.target.value);
   });
-
-  const removeTodo = useCallback(
-    toRemove => () => {
-      setTodos(todos.filter(item => item !== toRemove));
-    },
-    [todos]
-  );
 
   return (
     <div>

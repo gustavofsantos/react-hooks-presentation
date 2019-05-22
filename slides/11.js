@@ -26,6 +26,10 @@ export default function TodoList() {
     [todos],
   );
 
+  /**
+   * Carrega os dados salvos do local storage quando o componente monta,
+   * semelhante ao `componentDidMount`
+   */
   useEffect(() => {
     const savedTodos = localStorage.getItem(TODOS_STORAGE_KEY);
     if (savedTodos) {
@@ -33,6 +37,10 @@ export default function TodoList() {
     }
   }, []);
 
+  /**
+   * Escuta por mudanças no objeto `todos` e salva este objeto no local
+   * storage quando houver mudanças
+   */
   useEffect(() => {
     localStorage.setItem(TODOS_STORAGE_KEY, JSON.stringify(todos));
   }, [todos]);
