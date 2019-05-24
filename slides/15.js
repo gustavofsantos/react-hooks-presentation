@@ -3,7 +3,7 @@ import useTodos from "./13";
 
 /**
  *
- * Exemplo: Lista de afazeres
+ * Exemplo: Lista de afazeres melhor componentizada
  */
 export default function TodoList() {
   const { todos, addTodo, removeTodo } = useTodos();

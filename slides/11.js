@@ -8,7 +8,7 @@ export default function TodoList() {
 
   const handleChangeTodo = useCallback((ev) => {
     setTodo(ev.target.value);
-  });
+  }, []);
 
   const addTodo = useCallback(
     (ev) => {

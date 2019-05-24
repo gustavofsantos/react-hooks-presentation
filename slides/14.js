@@ -7,11 +7,13 @@ import useTodos from "./13";
  */
 export default function TodoList() {
   const [todo, setTodo] = useState("");
+
+  // useTodos custom hook
   const { todos, addTodo, removeTodo } = useTodos();
 
   const handleChangeTodo = useCallback(ev => {
     setTodo(ev.target.value);
-  });
+  }, []);
 
   return (
     <div>
